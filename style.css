@@ -1,6 +1,31 @@
+body {
+    text-align: center;
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+#scoreboard {
+    color: white;
+    font-size: x-large;
+}
+
+#result {
+    color: white;
+    font-size: x-large;
+}
+
+.grid-conatiner {
+    display: inline-block;
+    align-items: center
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     border: solid 1px;
     width: 1000px;
     height: 1000px;
@@ -26,4 +51,8 @@
 
 .laser {
     background-color: yellow;
+}
+
+.AlienLaser {
+    background-color: orange;
 }
