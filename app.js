@@ -142,48 +142,48 @@ function moveInvaders() {
         //     }
         // }
 
-        // for (let i = 0; i < alienInvaders[alienInvaders.length-1].id; i++) {
-        //     if (squares[grid[i]].classList.contains('AlienLaser')) {
-        //         squares[grid[i]].classList.remove('AlienLaser')
-        //     }
+        for (let i = 0; i < alienInvaders[alienInvaders.length-1].id; i++) {
+            if (squares[grid[i]].classList.contains('AlienLaser')) {
+                squares[grid[i]].classList.remove('AlienLaser')
+            }
 
-        //     if (squares[grid[i]+1].classList.contains('AlienLaser')) {
-        //         squares[grid[i]+1].classList.remove('AlienLaser')
-        //     }
+            if (squares[grid[i]+1].classList.contains('AlienLaser')) {
+                squares[grid[i]+1].classList.remove('AlienLaser')
+            }
 
-        //     if (squares[grid[i]+20].classList.contains('AlienLaser')) {
-        //         squares[grid[i]+20].classList.remove('AlienLaser')
-        //     }
+            if (squares[grid[i]+20].classList.contains('AlienLaser')) {
+                squares[grid[i]+20].classList.remove('AlienLaser')
+            }
 
-        //     if (squares[grid[i]+21].classList.contains('AlienLaser')) {
-        //         squares[grid[i]+21].classList.remove('AlienLaser')
-        //     }
+            if (squares[grid[i]+21].classList.contains('AlienLaser')) {
+                squares[grid[i]+21].classList.remove('AlienLaser')
+            }
 
-        //     if (squares[grid[i]+40].classList.contains('AlienLaser')) {
-        //         squares[grid[i]+40].classList.remove('AlienLaser')
-        //     }
+            if (squares[grid[i]+40].classList.contains('AlienLaser')) {
+                squares[grid[i]+40].classList.remove('AlienLaser')
+            }
 
-        //     if (squares[grid[i]].classList.contains('laser')) {
-        //         squares[grid[i]].classList.remove('laser')
-        //     }
+            if (squares[grid[i]].classList.contains('laser')) {
+                squares[grid[i]].classList.remove('laser')
+            }
 
-        //     if (squares[grid[i]+1].classList.contains('laser')) {
-        //         squares[grid[i]+1].classList.remove('laser')
-        //     }
+            if (squares[grid[i]+1].classList.contains('laser')) {
+                squares[grid[i]+1].classList.remove('laser')
+            }
 
-        //     if (squares[grid[i]+20].classList.contains('laser')) {
-        //         squares[grid[i]+20].classList.remove('laser')
-        //     }
+            if (squares[grid[i]+20].classList.contains('laser')) {
+                squares[grid[i]+20].classList.remove('laser')
+            }
 
-        //     if (squares[grid[i]+21].classList.contains('laser')) {
-        //         squares[grid[i]+21].classList.remove('laser')
-        //     }
+            if (squares[grid[i]+21].classList.contains('laser')) {
+                squares[grid[i]+21].classList.remove('laser')
+            }
 
-        //     if (squares[grid[i]+40].classList.contains('laser')) {
-        //         squares[grid[i]+40].classList.remove('laser')
-        //     }
+            if (squares[grid[i]+40].classList.contains('laser')) {
+                squares[grid[i]+40].classList.remove('laser')
+            }
 
-        // }
+        }
 
         //moves aliens to the newspot
         for (let i = 0; i <= alienInvaders.length -1; i++) {
@@ -269,7 +269,7 @@ function shoot(event) {
 
             switch(event.keyCode) {
                 case 32:
-                    laserId = setInterval(moveLaser, 60)
+                    laserId = setInterval(moveLaser, 80)
                 break
             }
         }
@@ -364,4 +364,4 @@ function alienShoot() {
     alienLaserId = setInterval(moveAlienLaser, 100)
     
 }
-alienLaserTimer = setInterval(alienShoot, 800)
+alienLaserTimer = setInterval(alienShoot, 400)

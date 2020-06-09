@@ -38,22 +38,39 @@ h1 {
 
 .shooter {
     background-color: blue;
+    background-image: url("ship.jpg");
+    background-size: contain;
 }
 
 .invader {
-    background-color: green;
+    background-color: black;
     border-radius: 10px;
+    background-image: url("Alien.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .boom {
     background-color: red;
+    background-image: url("Explode.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .laser {
-    background-color: yellow;
-
+    background-color: black;
+    background-image: url("missile.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .AlienLaser {
     background-color: orange;
+    background-image: url("AlienLaser.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
