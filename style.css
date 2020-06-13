@@ -1,6 +1,9 @@
 body {
     text-align: center;
     background-color: black;
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
@@ -26,7 +29,6 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    border: solid 1px;
     width: 1000px;
     height: 1000px;
 }
@@ -37,23 +39,44 @@ h1 {
 }
 
 .shooter {
-    background-color: blue;
-    background-image: url("ship.jpg");
-    background-size: contain;
+    background-color: black;
+    background-image: url("images/ship.jpg");
+    background-size: cover;
 }
+
+
+.shooterShields {
+    background-color: black;
+    background-image: url("images/shipShields.jpg");
+    background-size: cover;
+    animation: pulse 0.1s infinite;
+}
+  
+@keyframes pulse {
+    0% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    0% {
+        opacity: 0;
+      }
+  }
 
 .invader {
     background-color: black;
     border-radius: 10px;
-    background-image: url("Alien.png");
+    background-image: url("images/Alien.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    
 }
 
 .boom {
     background-color: red;
-    background-image: url("Explode.png");
+    background-image: url("images/Explode.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -61,7 +84,7 @@ h1 {
 
 .laser {
     background-color: black;
-    background-image: url("missile.jpg");
+    background-image: url("images/missile.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -69,7 +92,15 @@ h1 {
 
 .AlienLaser {
     background-color: orange;
-    background-image: url("AlienLaser.png");
+    background-image: url("images/AlienLaser.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ufo {
+    background-color: black;
+    background-image: url("images/ufo.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
