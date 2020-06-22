@@ -69,30 +69,40 @@ body {
     background-size: cover;
     animation: pulse 0.1s infinite;
 }
-  
+
 @keyframes pulse {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
+
     0% {
         opacity: 0;
-      }
-  }
+    }
+}
 
-  /* .flashit{
+/* .flashit{
     color:#f2f;
       -webkit-animation: flash linear 1s infinite;
       animation: flash linear 1s infinite;
   } */
 
-  @keyframes flash {
-      0% { opacity: 1; } 
-      50% { opacity: .1; } 
-      100% { opacity: 1; }
-  }
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 .invader {
     background-color: black;
@@ -101,7 +111,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    
+
 }
 
 .boom {
