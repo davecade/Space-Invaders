@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+
+* {
+    font-family: Piedra;
+    font-size: 40px;
+}
+
 body {
     text-align: center;
     background-color: black;
@@ -6,18 +13,29 @@ body {
     background-size: cover;
 }
 
-h1 {
-    color: white;
+#title {
+    color: rgb(203, 44, 224);
+    margin: 0px;
+    border: 0px;
 }
 
 #scoreboard {
-    color: white;
-    font-size: x-large;
+    color: rgb(203, 44, 224);
+    margin: 0px;
 }
 
 #result {
-    color: white;
-    font-size: x-large;
+    color: rgb(203, 44, 224);
+    margin: 0px;
+}
+
+#press-start {
+    /* right: 810px;
+    top: 450px; */
+    /* font-size: 70px; */
+    color: rgb(203, 44, 224);
+    margin-top: 300px;
+    animation: flash linear 1s infinite;
 }
 
 .grid-conatiner {
@@ -64,6 +82,18 @@ h1 {
       }
   }
 
+  /* .flashit{
+    color:#f2f;
+      -webkit-animation: flash linear 1s infinite;
+      animation: flash linear 1s infinite;
+  } */
+
+  @keyframes flash {
+      0% { opacity: 1; } 
+      50% { opacity: .1; } 
+      100% { opacity: 1; }
+  }
+
 .invader {
     background-color: black;
     border-radius: 10px;
@@ -91,7 +121,6 @@ h1 {
 }
 
 .AlienLaser {
-    background-color: orange;
     background-image: url("images/AlienLaser.png");
     background-size: contain;
     background-repeat: no-repeat;
